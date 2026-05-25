@@ -1,0 +1,22 @@
+name: "Egern 金融桌面 Pro"
+description: "油价 + 黄金 + BTC + 美元指数"
+
+auto_update:
+  interval: 1800
+
+env_schema:
+
+  GAS_REGION:
+    name: 📍 油价地区
+    default_value: "zhejiang/shaoxing"
+
+scriptings:
+
+  - generic:
+      name: 金融面板
+      script_url: https://raw.githubusercontent.com/你的GitHub用户名/egern-widgets/main/Egern/Widget/Finance.js
+      timeout: 10
+
+widgets:
+  - name: 金融面板
+    script_name: 金融面板
